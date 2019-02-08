@@ -1,0 +1,219 @@
+[16-Oct-2017 19:58:51 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[16-Oct-2017 19:58:51 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 3
+[16-Oct-2017 19:58:51 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 14
+[16-Oct-2017 19:59:50 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[16-Oct-2017 19:59:50 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[16-Oct-2017 19:59:57 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[16-Oct-2017 20:00:10 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[16-Oct-2017 20:00:10 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[17-Oct-2017 02:41:41 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[17-Oct-2017 02:41:41 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[17-Oct-2017 02:41:45 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[17-Oct-2017 02:41:45 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[17-Oct-2017 02:41:49 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[17-Oct-2017 02:41:49 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[21-Oct-2017 06:35:38 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:35:45 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:35:45 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[21-Oct-2017 06:40:24 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:40:24 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:40:24 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[21-Oct-2017 06:40:34 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:40:34 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:40:34 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[21-Oct-2017 06:40:39 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:40:39 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:40:39 America/New_York] PHP Notice:  Undefined index: password in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:40:39 America/New_York] PHP Notice:  Undefined index: username in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 11
+[21-Oct-2017 06:40:48 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:40:48 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:40:48 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[21-Oct-2017 06:40:53 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:40:53 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:40:53 America/New_York] PHP Notice:  Undefined index: password in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:40:53 America/New_York] PHP Notice:  Undefined index: username in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 11
+[21-Oct-2017 06:41:07 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:41:07 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:41:07 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 27
+[21-Oct-2017 06:41:47 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:41:47 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:41:47 America/New_York] PHP Notice:  Undefined index: password in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:41:47 America/New_York] PHP Notice:  Undefined index: username in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 11
+[21-Oct-2017 06:42:50 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[21-Oct-2017 06:42:50 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[21-Oct-2017 06:42:50 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 29
+[07-Nov-2017 19:39:24 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[07-Nov-2017 19:39:24 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[09-Dec-2017 09:38:16 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[09-Dec-2017 09:38:16 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[09-Dec-2017 09:38:16 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 29
+[09-Dec-2017 21:18:41 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[09-Dec-2017 21:18:41 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 5
+[09-Dec-2017 21:18:41 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/dkpkalteng/adminweb/cek_login.php on line 29
+[02-Jan-2018 03:25:11 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[20-Jan-2018 10:32:05 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/dkpkalteng/config/koneksi.php on line 23
+[20-Jan-2018 18:08:04 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[20-Jan-2018 18:08:04 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 5
+[20-Jan-2018 18:08:04 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 29
+[20-Jan-2018 18:09:45 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[20-Jan-2018 18:09:45 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 5
+[20-Jan-2018 18:09:45 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 27
+[02-Mar-2018 07:10:38 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[02-Mar-2018 07:10:38 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 5
+[02-Mar-2018 07:10:38 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 27
+[02-Mar-2018 07:10:43 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[02-Mar-2018 07:10:43 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 5
+[02-Mar-2018 07:10:43 America/New_York] PHP Notice:  Undefined index: password in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 5
+[02-Mar-2018 07:10:43 America/New_York] PHP Notice:  Undefined index: username in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 11
+[02-Mar-2018 07:12:32 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[02-Mar-2018 07:12:32 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 27
+[03-Mar-2018 10:58:57 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[04-Mar-2018 01:08:33 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 09:22:19 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 09:22:27 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 09:22:27 America/New_York] PHP Fatal error:  Call to undefined function session_register() in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 27
+[05-Mar-2018 09:24:57 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[05-Mar-2018 09:24:57 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[05-Mar-2018 13:08:19 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 13:08:24 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 13:08:42 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 13:09:57 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 13:11:47 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[05-Mar-2018 13:11:47 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[05-Mar-2018 13:17:40 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/rumacsnc/public_html/cutipegawai/adminweb/media.php on line 196
+[05-Mar-2018 13:27:11 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/rumacsnc/public_html/cutipegawai/adminweb/media.php on line 195
+[05-Mar-2018 14:16:18 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[05-Mar-2018 14:16:18 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[06-Mar-2018 08:00:15 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[06-Mar-2018 08:00:15 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[06-Mar-2018 08:15:16 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[06-Mar-2018 08:15:16 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[10-Mar-2018 08:22:40 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[10-Mar-2018 08:22:40 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[10-Mar-2018 08:35:09 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[10-Mar-2018 08:35:25 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[10-Mar-2018 08:35:25 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[10-Mar-2018 08:36:08 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant namauser - assumed 'namauser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant nip - assumed 'nip' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 15
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant passuser - assumed 'passuser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 16
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant level - assumed 'level' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 17
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant nama - assumed 'nama' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 18
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant ADMIN - assumed 'ADMIN' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 20
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 22
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant STAFF - assumed 'STAFF' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 22
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant KEPALA - assumed 'KEPALA' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 24
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant KADIS - assumed 'KADIS' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 26
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant leveluser - assumed 'leveluser' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28
+[10-Mar-2018 08:36:08 America/New_York] PHP Notice:  Use of undefined constant PEGAWAI - assumed 'PEGAWAI' in /home/rumacsnc/public_html/cutipegawai/adminweb/cek_login.php on line 28

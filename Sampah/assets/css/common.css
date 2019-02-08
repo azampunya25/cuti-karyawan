@@ -1,0 +1,34 @@
+.slides_container {
+	width:722px;
+	display:none;
+}
+.slides_container .imgeslider {
+	width:722px;
+	height:328px;
+	display:block;
+}
+.pagination {
+	position:absolute;
+	z-index:12;
+	bottom:14px;
+	right:25px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.pagination li {
+	float:left;
+	margin-right:7px;
+}
+.pagination li a {
+	background:url(../images/circle.png) left top no-repeat;
+	display:block;
+	width:19px;
+	height:19px;
+	text-indent:-99999px;
+}
+.pagination .current a {
+	background:url(../images/circle-h.png) left top no-repeat;
+	height:19px;
+	width:19px;
+}
