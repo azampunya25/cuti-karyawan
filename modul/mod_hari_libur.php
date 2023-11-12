@@ -17,16 +17,16 @@
 
 
 <?php
-switch($_GET[act]){
+switch(isset($_GET['act'])){
   // Tampil Jabatan
   default:
     echo "<h2>Hari Libur</h2>
           <input type=button value='Tambah Hari Libur' onclick=location.href='?module=hari_libur&act=tambah_hari_libur'>
           <table>
           <tr><th>no</th><th>tanggal</th><th>keterangan</th><th>aksi</th></tr>";
-    $tampil=mysql_query("SELECT * FROM hari_libur ORDER BY tanggal");
+    $tampil=mysqli_query($mysqli, "SELECT * FROM hari_libur ORDER BY tanggal");
     $no=1;
-    while ($r=mysql_fetch_array($tampil)){
+    while ($r=mysqli_fetch_array($tampil)){
        echo "<tr><td>$no</td>
              <td>$r[tanggal]</td>
              <td>$r[keterangan]</td>
@@ -50,8 +50,8 @@ switch($_GET[act]){
      break;
 
   case "edit_hari_libur":
-    $edit=mysql_query("SELECT * FROM hari_libur WHERE id_hari_libur='$_GET[id]'");
-    $r=mysql_fetch_array($edit);
+    $edit=mysqli_query($mysqli, "SELECT * FROM hari_libur WHERE id_hari_libur='$_GET[id]'");
+    $r=mysqli_fetch_array($edit);
 
     echo "<h2>Edit Hari Libur</h2>
           <form method=POST action=./aksi.php?module=hari_libur&act=update>

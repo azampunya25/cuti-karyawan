@@ -1,6 +1,6 @@
 
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Persetujuan Cuti
   default:
     echo "
@@ -19,7 +19,7 @@ switch($_GET['act']){
                         </tr>
                     </table>";
 
-                     $s=mysql_query("SELECT * FROM permohonan_cuti
+                     $s=mysqli_query($mysqli, "SELECT * FROM permohonan_cuti
                      inner join karyawan on permohonan_cuti.nik=karyawan.nik
                      inner join jenis_cuti on permohonan_cuti.kd_jcuti=jenis_cuti.kd_jcuti
                      where karyawan.nik_atasan='$_SESSION[namauser]'
@@ -43,7 +43,7 @@ switch($_GET['act']){
                     </thead>";
 
                         $no=1;
-                        while ($r2=mysql_fetch_array($s)){
+                        while ($r2=mysqli_fetch_array($s)){
                     echo"<tbody>
                         <tr>
                             <td>$no</td>

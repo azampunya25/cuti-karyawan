@@ -3,7 +3,6 @@ session_start();
 include "config/koneksi.php";
 include "config/library.php";
 
-
 function JumMinggu($tgl_mulai,$tgl_akhir) {
 $adaysec =24*3600;
 $tgla= strtotime($tgl_mulai);
@@ -38,12 +37,12 @@ function dateDiff($dformat, $endDate, $beginDate){
 	return $end_date- $start_date;
 	}
 
-$module=$_GET[module];
-$act=$_GET[act];
+$module=isset($_GET['module']);
+$act=isset($_GET['act']);
 
 // Menghapus data
 if (isset($module) AND $act=='hapus'){
-  mysql_query("DELETE FROM ".$module." WHERE id_".$module."='$_GET[id]'");
+  mysqli_query($mysqli, "DELETE FROM ".$module." WHERE id_".$module."='$_GET[id]'");
   header('location:media.php?module='.$module);
 }
 
@@ -51,16 +50,16 @@ if (isset($module) AND $act=='hapus'){
 elseif ($module=='user' AND $act=='input'){
 
     $s = "SELECT * FROM user WHERE nik='$_POST[nik]'";
-	$s1 = mysql_query($s);
-		if (mysql_num_rows($s1) > 0)
+	$s1 = mysqli_query($mysqli,$s);
+		if (mysqli_num_rows($s1) > 0)
 		{
 		 //header('location:media.php?err&module='.$module);
 		 header('location:media.php?erru');
          exit();
         }
 
-  $pass=md5($_POST[password]);
-  mysql_query("INSERT INTO user(nik,
+  $pass=md5($_POST['password']);
+  mysqli_query($mysqli, "INSERT INTO user(nik,
                                 password,
                                 level)
 	                       VALUES('$_POST[nik]',
@@ -72,15 +71,15 @@ elseif ($module=='user' AND $act=='input'){
 // Update user
 elseif ($module=='user' AND $act=='update'){
   // Apabila password tidak diubah
-  if (empty($_POST[password])) {
-    mysql_query("UPDATE user SET nik         = '$_POST[nik]',
+  if (empty($_POST['password'])) {
+    mysqli_query($mysqli, "UPDATE user SET nik         = '$_POST[nik]',
                                     level    = '$_POST[level]'
                            WHERE id_user     = '$_POST[id]'");
   }
   // Apabila password diubah
   else{
-    $pass=md5($_POST[password]);
-    mysql_query("UPDATE user SET nik         = '$_POST[nik]',
+    $pass=md5($_POST['password']);
+    mysqli_query($mysqli, "UPDATE user SET nik         = '$_POST[nik]',
                                  password    = '$pass',
                                  level       = '$_POST[level]'
                            WHERE id_user     = '$_POST[id]'");
@@ -91,7 +90,7 @@ elseif ($module=='user' AND $act=='update'){
 
 // Input modul
 elseif ($module=='modul' AND $act=='input'){
-  mysql_query("INSERT INTO modul(nama_modul,
+  mysqli_query($mysqli, "INSERT INTO modul(nama_modul,
                                  link,
                                  publish,
                                  aktif,
@@ -108,7 +107,7 @@ elseif ($module=='modul' AND $act=='input'){
 
 // Update modul
 elseif ($module=='modul' AND $act=='update'){
-  mysql_query("UPDATE modul SET nama_modul = '$_POST[nama_modul]',
+  mysqli_query($mysqli, "UPDATE modul SET nama_modul = '$_POST[nama_modul]',
                                 link       = '$_POST[link]',
                                 publish    = '$_POST[publish]',
                                 aktif      = '$_POST[aktif]',
@@ -121,15 +120,15 @@ elseif ($module=='modul' AND $act=='update'){
 //input jabatan
 elseif ($module=='jabatan' AND $act=='input'){
 	$s = "SELECT * FROM jabatan WHERE kd_jabatan='$_POST[kd_jabatan]'";
-	$s1 = mysql_query($s);
-		if (mysql_num_rows($s1) > 0)
+	$s1 = mysqli_query($mysqli, $s);
+		if (mysqli_num_rows($s1) > 0)
 		{
 		 //header('location:media.php?err&module='.$module);
 		 header('location:media.php?errj');
          exit();
         }
 
-	mysql_query("INSERT INTO jabatan(kd_jabatan,
+	mysqli_query($mysqli, "INSERT INTO jabatan(kd_jabatan,
 	                                 nm_jabatan,
 	                                 keterangan)
 	                          VALUES('$_POST[kd_jabatan]',
@@ -140,7 +139,7 @@ elseif ($module=='jabatan' AND $act=='input'){
 
 // Update jabatan
 elseif ($module=='jabatan' AND $act=='update'){
-	mysql_query("UPDATE jabatan SET kd_jabatan = '$_POST[kd_jabatan]',
+	mysqli_query($mysqli, "UPDATE jabatan SET kd_jabatan = '$_POST[kd_jabatan]',
 	                                nm_jabatan = '$_POST[nm_jabatan]',
 	                                keterangan = '$_POST[keterangan]'
 	                        WHERE id_jabatan   = '$_POST[id]'");
@@ -150,15 +149,15 @@ elseif ($module=='jabatan' AND $act=='update'){
 //input karyawan
 elseif ($module=='karyawan' AND $act=='input'){
 	$s = "SELECT * FROM karyawan WHERE nik='$_POST[nik]'";
-	$s1 = mysql_query($s);
-		if (mysql_num_rows($s1) > 0)
+	$s1 = mysqli_query($mysqli, $s);
+		if (mysqli_num_rows($s1) > 0)
 		{
 		 //header('location:media.php?err&module='.$module);
 		 header('location:media.php?errk');
          exit();
         }
 
-	mysql_query("INSERT INTO karyawan(nik,
+	mysqli_query($mysqli, "INSERT INTO karyawan(nik,
 	                                 nama,
 	                                 kd_jabatan,
 	                                 kelamin,
@@ -187,7 +186,7 @@ elseif ($module=='karyawan' AND $act=='input'){
 
 // Update karyawan
 elseif ($module=='karyawan' AND $act=='update'){
-	mysql_query("UPDATE karyawan SET nik       = '$_POST[nik]',
+	mysqli_query($mysqli, "UPDATE karyawan SET nik       = '$_POST[nik]',
 	                                nama       = '$_POST[nama]',
 	                                kd_jabatan = '$_POST[kd_jabatan]',
 	                                kelamin    = '$_POST[kelamin]',
@@ -206,15 +205,15 @@ elseif ($module=='karyawan' AND $act=='update'){
 //input jenis cuti
 elseif ($module=='jenis_cuti' AND $act=='input'){
 	$s = "SELECT * FROM jenis_cuti WHERE kd_jcuti='$_POST[kd_jcuti]'";
-	$s1 = mysql_query($s);
-		if (mysql_num_rows($s1) > 0)
+	$s1 = mysqli_query($mysqli, $s);
+		if (mysqli_num_rows($s1) > 0)
 		{
 		 //header('location:media.php?err&module='.$module);
 		 header('location:media.php?errjc');
          exit();
         }
 
-	mysql_query("INSERT INTO jenis_cuti(kd_jcuti,
+	mysqli_query($mysqli, "INSERT INTO jenis_cuti(kd_jcuti,
 	                                 nama_jcuti,
 	                                 lama_jcuti,
 	                                 keterangan)
@@ -227,7 +226,7 @@ elseif ($module=='jenis_cuti' AND $act=='input'){
 
 // Update jenis cuti
 elseif ($module=='jenis_cuti' AND $act=='update'){
-	mysql_query("UPDATE jenis_cuti SET kd_jcuti = '$_POST[kd_jcuti]',
+	mysqli_query($mysqli, "UPDATE jenis_cuti SET kd_jcuti = '$_POST[kd_jcuti]',
 	                                nama_jcuti = '$_POST[nama_jcuti]',
 	                                lama_jcuti = '$_POST[lama_jcuti]',
 	                                keterangan = '$_POST[keterangan]'
@@ -239,15 +238,15 @@ elseif ($module=='jenis_cuti' AND $act=='update'){
 //input hari libur
 elseif ($module=='hari_libur' AND $act=='input'){
 	$s = "SELECT * FROM hari_libur WHERE tanggal='$_POST[tanggal]'";
-	$s1 = mysql_query($s);
-		if (mysql_num_rows($s1) > 0)
+	$s1 = mysqli_query($mysqli, $s);
+		if (mysqli_num_rows($s1) > 0)
 		{
 		 //header('location:media.php?err&module='.$module);
 		 header('location:media.php?errhr');
          exit();
         }
 
-	mysql_query("INSERT INTO hari_libur(tanggal,
+	mysqli_query($mysqli, "INSERT INTO hari_libur(tanggal,
 	                                    keterangan)
 	                          VALUES('$_POST[tanggal]',
 	                                 '$_POST[keterangan]')");
@@ -261,7 +260,7 @@ elseif ($module=='persetujuan_cuti' AND $act=='setuju'){
 	$nik=$_GET['nik'];
 	$nama=$_GET['nama'];
     //echo "setuju";
-    mysql_query("UPDATE permohonan_cuti,karyawan SET
+    mysqli_query($mysqli, "UPDATE permohonan_cuti,karyawan SET
                 permohonan_cuti.status_pengajuan='setuju',karyawan.status_karyawan='cuti'
                  WHERE permohonan_cuti.id_pcuti='$id_pcuti' AND karyawan.nik='$nik'");
 
@@ -274,7 +273,7 @@ elseif ($module=='persetujuan_cuti' AND $act=='tdksetuju'){
 	$nik=$_GET['nik'];
 	$nama=$_GET['nama'];
     //echo "setuju";
-    mysql_query("UPDATE permohonan_cuti,karyawan SET
+    mysqli_query($mysqli, "UPDATE permohonan_cuti,karyawan SET
                 permohonan_cuti.status_pengajuan='tidak',karyawan.status_karyawan='aktif'
                  WHERE permohonan_cuti.id_pcuti='$id_pcuti' AND karyawan.nik='$nik'");
 
@@ -297,18 +296,18 @@ elseif ($module=='permohonan_cuti' AND $act=='input'){
 
   $jumM=JumMinggu($tgl_mulai,$tgl_akhir);
   $jumS=JumSabtu($tgl_mulai,$tgl_akhir);
-  $sql=mysql_query("SELECT COUNT(*) as jumLibur FROM hari_libur WHERE
+  $sql=mysqli_query($mysqli, "SELECT COUNT(*) as jumLibur FROM hari_libur WHERE
    tanggal between '$tgl_mulai' AND '$tgl_akhir'");
-  $t=mysql_fetch_assoc($sql);
+  $t=mysqli_fetch_assoc($sql);
   $LiburNas=$t['jumLibur'];
   $JumHari = dateDiff("-", $tgl_akhir, $tgl_mulai);
   $JumHari1=$JumHari+1;
   $totallibur=$jumM + $jumS + $LiburNas;
   $totalcuti=$JumHari1 - $totallibur;
 
-  $sp=mysql_query("SELECT * FROM periode_cuti
+  $sp=mysqli_query($mysqli, "SELECT * FROM periode_cuti
   WHERE nik='$_SESSION[namauser]' and kd_jcuti='$jenis_cuti'");
-  $dp=mysql_fetch_array($sp);
+  $dp=mysqli_fetch_array($sp);
   if ($tgl_mulai>$tgl_akhir){
   	//echo "tanggal awal tidak boleh lebih besar dari tanggal akhir";
   	header('location:media.php?errtanggal');
@@ -325,7 +324,7 @@ elseif ($module=='permohonan_cuti' AND $act=='input'){
   	exit();
   	}
   elseif ($jenis_cuti=='CThn'){
-   if(($tgl_mulai<$dp[awalcuti]) OR ($tgl_akhir>$dp[akhircuti]))
+   if(($tgl_mulai<$dp['awalcuti']) OR ($tgl_akhir>$dp['akhircuti']))
    {
     header('location:media.php?errperiode');
     exit();
@@ -334,22 +333,22 @@ elseif ($module=='permohonan_cuti' AND $act=='input'){
    else{
   		    $s = "SELECT * FROM jenis_cuti
             WHERE kd_jcuti='$jenis_cuti'";
-            $s1 = mysql_query($s);
-            $data=mysql_fetch_array($s1);
+            $s1 = mysqli_query($mysqli, $s);
+            $data=mysqli_fetch_array($s1);
             $lama_cuti=$data['lama_jcuti']-$totalcuti;
     		$sql="SELECT * FROM permohonan_cuti WHERE nik='$nik' and tahun='$tahun' and kd_jcuti='$jenis_cuti'
     		order by id_pcuti desc";
-    		$hsl= mysql_query($sql);
-    		$data2=mysql_fetch_array($hsl);
+    		$hsl= mysqli_query($mysqli, $sql);
+    		$data2=mysqli_fetch_array($hsl);
            
-    		   if (mysql_num_rows($hsl)>0){
+    		   if (mysqli_num_rows($hsl)>0){
             if($totalcuti>$data2['sisa_cuti']){
             	header('location:media.php?errtolakcuti');
  			        exit();
             	}
               else{         		   
     		       $lama_cuti2=$data2['sisa_cuti']-$totalcuti;
-        		   mysql_query("INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
+        		   mysqli_query($mysqli, "INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
                                                    tgl_mulai,tgl_akhir,
                                                    lama_cuti,sisa_cuti,
                                                    alasan,status_pengajuan)
@@ -362,7 +361,7 @@ elseif ($module=='permohonan_cuti' AND $act=='input'){
            }     
 
     		   else{
-          		mysql_query("INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
+          		mysqli_query($mysqli, "INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
                                                    tgl_mulai,tgl_akhir,
                                                    lama_cuti,sisa_cuti,
                                                    alasan,status_pengajuan)
@@ -381,24 +380,24 @@ elseif ($module=='permohonan_cuti' AND $act=='input'){
     elseif($jenis_cuti<>'CThn'){
     $s = "SELECT * FROM jenis_cuti
     WHERE kd_jcuti='$jenis_cuti'";
-    $s1 = mysql_query($s);
-    $data=mysql_fetch_array($s1);
+    $s1 = mysqli_query($mysqli, $s);
+    $data=mysqli_fetch_array($s1);
     //$lama_cuti=$data['lama_jcuti']-$totalcuti;
     $lama_cuti=$data['lama_jcuti']-$JumHari1;
     $sql="SELECT * FROM permohonan_cuti WHERE nik='$nik' and tahun='$tahun' and kd_jcuti='$jenis_cuti'
     order by id_pcuti desc";
-    $hsl= mysql_query($sql);
-    $data2=mysql_fetch_array($hsl);
+    $hsl= mysqli_query($mysqli, $sql);
+    $data2=mysqli_fetch_array($hsl);
 
 
-    if (mysql_num_rows($hsl)>0){
+    if (mysqli_num_rows($hsl)>0){
       if($totalcuti>$data2['sisa_cuti']){
             	header('location:media.php?errtolakcuti');
  			        exit();
             	}else{
         //$lama_cuti2=$data2['sisa_cuti']-$totalcuti;
         $lama_cuti2=$data2['sisa_cuti']-$JumHari1;
-        mysql_query("INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
+        mysqli_query($mysqli, "INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
                                                    tgl_mulai,tgl_akhir,
                                                    lama_cuti,sisa_cuti,
                                                    alasan,status_pengajuan)
@@ -410,7 +409,7 @@ elseif ($module=='permohonan_cuti' AND $act=='input'){
     }
     }
     else{
-          mysql_query("INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
+          mysqli_query($mysqli, "INSERT INTO permohonan_cuti(nik,tahun,kd_jcuti,
                                                    tgl_mulai,tgl_akhir,
                                                    lama_cuti,sisa_cuti,
                                                    alasan,status_pengajuan)
@@ -427,7 +426,7 @@ elseif ($module=='permohonan_cuti' AND $act=='input'){
 //input periode cuti
 elseif ($module=='periode_cuti' AND $act=='input'){
 $thn=date("Y");
- mysql_query("INSERT INTO periode_cuti(nik,kd_jcuti,tahun,awalcuti,akhircuti)
+ mysqli_query($mysqli, "INSERT INTO periode_cuti(nik,kd_jcuti,tahun,awalcuti,akhircuti)
               VALUES('$_POST[nik]','$_POST[kd_jcuti]','$_POST[thn]','$_POST[awalcuti]','$_POST[akhircuti]')");
               header('location:media.php?module='.$module);
 }
@@ -435,7 +434,7 @@ $thn=date("Y");
 //Update periode cuti
 elseif ($module=='periode_cuti' AND $act=='update'){
 	$thn=date("Y");
- mysql_query("UPDATE periode_cuti SET tahun='$_POST[thn]',
+ mysqli_query($mysqli, "UPDATE periode_cuti SET tahun='$_POST[thn]',
  									awalcuti='$_POST[awalcuti]',
                                     akhircuti='$_POST[akhircuti]'
                                     WHERE id_periode_cuti='$_POST[id]'");

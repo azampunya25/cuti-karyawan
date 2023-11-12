@@ -2,17 +2,12 @@
          $sql="SELECT * FROM jenis_cuti";
          $h=mysql_query($sql);
          //$getCombojenis_cuti = mysql_query($sql,$conn) or die ('Query Gagal');
-
-
 ?>
 
 <html>
 <head>
  <script type="text/javascript" src="jquery144.min.js"></script>
-
  <script type="text/javascript">
-
-
 $(function() {
 	$("#cmbJenisCuti").change(getAjaxJenisCuti);
 	function getAjaxJenisCuti(){
@@ -44,9 +39,10 @@ $(function() {
 <select name="jenis_cuti" id="cmbJenisCuti">
 <option value="">---pilih---</option>
  <?php
-  while($data=mysql_fetch_array($h))
+  while($data=mysqli_fetch_array($h))
   {
-   echo "<option value=$data[kd_jcuti]>$data[nama_jcuti]</option>";  	}
+   echo "<option value=$data[kd_jcuti]>$data[nama_jcuti]</option>";
+  	}
  ?>
 </select>
 <img src="loading.gif" width="18" id="imgLoadMerk"/>

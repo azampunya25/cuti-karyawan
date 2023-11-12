@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil User
   default:
   echo "
@@ -88,8 +88,8 @@ switch($_GET['act']){
   break;
 
   case "edituser":
-  $edit=mysql_query("SELECT * FROM user WHERE id_user='$_GET[id]'");
-  $r=mysql_fetch_array($edit);
+  $edit=mysqli_query($mysqli, "SELECT * FROM user WHERE id_user='$_GET[id]'");
+  $r=mysqli_fetch_array($edit);
 
   echo "
         <div class='box box-default'>

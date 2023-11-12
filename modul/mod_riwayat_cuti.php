@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Riwayat Cuti
   default:
     echo "
@@ -9,8 +9,8 @@ switch($_GET['act']){
           </div>
           <div class='box-body'>
             <div class='row'>";
-                 $s=mysql_query("SELECT * FROM karyawan WHERE nik='$_SESSION[namauser]'");
-                 $r=mysql_fetch_array($s);
+                 $s=mysqli_query($mysqli, "SELECT * FROM karyawan WHERE nik='$_SESSION[namauser]'");
+                 $r=mysqli_fetch_array($s);
 
         echo" 
                 <div class='col-md-1'>NIP</div>  
@@ -42,10 +42,10 @@ switch($_GET['act']){
                         </thead>";
 
                         $no=1;
-                        $s2=mysql_query("SELECT * FROM permohonan_cuti inner join jenis_cuti
+                        $s2=mysqli_query($mysqli, "SELECT * FROM permohonan_cuti inner join jenis_cuti
                          on permohonan_cuti.kd_jcuti=jenis_cuti.kd_jcuti
                          WHERE permohonan_cuti.nik='$_SESSION[namauser]' order by permohonan_cuti.id_pcuti desc");
-                        while ($r2=mysql_fetch_array($s2)){
+                        while ($r2=mysqli_fetch_array($s2)){
                         echo"<tbody>
                                 <tr>
                                     <td>$no</td>
@@ -55,11 +55,11 @@ switch($_GET['act']){
                                     <td>$r2[tgl_akhir]</td>
                                     <td>$r2[lama_cuti]</td>
                                     <td>";
-                                 if($r2[sisa_cuti]<0){
+                                 if($r2['sisa_cuti']<0){
                                  	echo "-";
                                  	}
                                  else{
-                                 	echo $r2[sisa_cuti];
+                                 	echo $r2['sisa_cuti'];
                                  	}
                         echo"    </td>
                          <td>$r2[alasan]</td>

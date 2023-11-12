@@ -1,5 +1,5 @@
 <?php
-switch($_GET[act]){
+switch(isset($_GET['act'])){
   // Tampil Hubungi Kami
   default:
     echo "<h2>Hubungi Kami</h2>

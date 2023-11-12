@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Periode Cuti
   default:
   echo "<div class='box box-default'>
@@ -23,8 +23,8 @@ switch($_GET['act']){
   <div class='col-md-12'>
   <table id='example' class='table table-bordered table-striped'>
   <tr><th>no</th><th>nip</th><th>jenis cuti</th><th>tahun</th><th>periode cuti</th><th>aksi</th></tr>";
-  $tampil=mysql_query("SELECT * FROM periode_cuti inner join jenis_cuti
-    on periode_cuti.kd_jcuti=jenis_cuti.kd_jcuti ORDER BY id_periode_cuti");
+  $tampil=mysqli_query($mysqli, ("SELECT * FROM periode_cuti inner join jenis_cuti
+    on periode_cuti.kd_jcuti=jenis_cuti.kd_jcuti ORDER BY id_periode_cuti")
   $no=1;
   while ($r=mysql_fetch_array($tampil)){
    echo "<tr><td>$no</td>
@@ -80,7 +80,7 @@ switch($_GET['act']){
  <h2></h2>";
  $nik=$_POST['nik'];
           //if ((isset($_POST['submit'])) and ($nik<>"")){
- $s=mysql_query("SELECT * FROM karyawan WHERE nik='$nik'");
+ $s=mysqli_query($mysqli, ("SELECT * FROM karyawan WHERE nik='$nik'");
  $d=mysql_fetch_array($s);
  if(mysql_num_rows($s)>0){
   echo"<form method=POST action='./aksi.php?module=periode_cuti&act=input'>
@@ -89,7 +89,7 @@ switch($_GET['act']){
   <tr><td>Nama</td>        <td> : <input type=text name='nama' value='$d[nama]' readonly></td></tr>
   <tr><td>Tanggal Masuk</td> <td> : <input type=text name='tglmasuk' value='$d[tgl_masuk]' readonly></td></tr>
   <tr><td>Jenis Cuti</td> <td> : <select name='kd_jcuti'>";
-  $sj=mysql_query("SELECT * FROM jenis_cuti");
+  $sj=mysqli_query($mysqli, ("SELECT * FROM jenis_cuti");
   for($i=0;$i<mysql_num_rows($sj);$i++) {
     $dj=mysql_fetch_assoc($sj);
     echo"<option value=$dj[kd_jcuti]>$dj[nama_jcuti]</option>";
@@ -108,7 +108,7 @@ switch($_GET['act']){
 break;
 
 case "editperiode_cuti":
-$edit=mysql_query("SELECT * FROM periode_cuti inner join jenis_cuti
+$edit=mysqli_query($mysqli, ("SELECT * FROM periode_cuti inner join jenis_cuti
   on periode_cuti.kd_jcuti=jenis_cuti.kd_jcuti
   WHERE periode_cuti.id_periode_cuti='$_GET[id]'");
 $r=mysql_fetch_array($edit);

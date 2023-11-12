@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Permohonan Cuti
   default:
   echo "
@@ -10,13 +10,13 @@ switch($_GET['act']){
           <div class='box-body'>
             <div class='row'>
               <div class='col-md-12'>";
-                $s=mysql_query("SELECT * FROM karyawan WHERE nik='$_SESSION[namauser]'");
-                $r=mysql_fetch_array($s);
+                $s=mysqli_query($mysqli, "SELECT * FROM karyawan WHERE nik='$_SESSION[namauser]'");
+                $r=mysqli_fetch_array($s);
                 $thn=date('Y');
 
-                $s1=mysql_query("SELECT * FROM periode_cuti
+                $s1=mysqli_query($mysqli, "SELECT * FROM periode_cuti
                    WHERE nik='$_SESSION[namauser]'");
-                $r1=mysql_fetch_array($s1);
+                $r1=mysqli_fetch_array($s1);
 
                 echo"
                 <div class='row'>
@@ -60,9 +60,9 @@ switch($_GET['act']){
                       <select name='jenis_cuti' id='cmbJenisCuti' class='form-control'>
                       <option value=''>----Jenis Cuti-----</option>";
                       $thn=date('Y');
-                      $sj=mysql_query("SELECT * FROM jenis_cuti");
+                      $sj=mysqli_query($mysqli, "SELECT * FROM jenis_cuti");
 
-                      while($rj=mysql_fetch_array($sj)){
+                      while($rj=mysqli_fetch_array($sj)){
                         echo "<option value='$rj[kd_jcuti]'>$rj[nama_jcuti]</option>";
                       }
                       echo"

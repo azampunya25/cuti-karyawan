@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Karyawan
   default:
     echo "
@@ -20,9 +20,9 @@ switch($_GET['act']){
                   <th>Alamat Tinggal</th>
                   <th>Aksi</th>
                 </tr>";
-                $tampil=mysql_query("SELECT * FROM karyawan ORDER BY nik");
+                $tampil=mysqli_query($mysqli, "SELECT * FROM karyawan ORDER BY nik");
                 $no=1;
-                while ($r=mysql_fetch_array($tampil)){
+                while ($r=mysqli_fetch_array($tampil)){
           echo "<tr><td>$no</td>
                   <td><a href='?module=karyawan&act=editkaryawan&id=$r[id_karyawan]'>$r[nik]</a></td>
                   <td>$r[nama]</td>
@@ -60,17 +60,17 @@ switch($_GET['act']){
      echo"<table>
      <form method=POST action=./aksi.php?module=karyawan&act=update>";
 
-     $tampil=mysql_query("SELECT * FROM karyawan WHERE id_karyawan='$_GET[id]'");
-     $r=mysql_fetch_array($tampil);
+     $tampil=mysqli_query($mysqli, "SELECT * FROM karyawan WHERE id_karyawan='$_GET[id]'");
+     $r=mysqli_fetch_array($tampil);
      echo"<tr><th>Nip</th><td><input type='text' name='nik' value='$r[nik]'></td></tr>
           <tr><th>Nama</th><td><input type='text' name='nama' value='$r[nama]'></td></tr>
           <tr><th>Kd Jabatan</th><td><select name='kd_jabatan'>";
-          $res=mysql_query("select * from jabatan");
-                           	//if(mysql_num_rows($res)==0) echo "tidak ada data..";
+          $res=mysqli_query($mysqli, "select * from jabatan");
+                           	//if(mysqli_num_rows($res)==0) echo "tidak ada data..";
 							//	else
-								for($i=0;$i<mysql_num_rows($res);$i++) {
-								$row=mysql_fetch_assoc($res);
-                                if ($row[kd_jabatan]==$r[kd_jabatan]) echo "<option value=$r[kd_jabatan] selected>$r[kd_jabatan]</option>";
+								for($i=0;$i<mysqli_num_rows($res);$i++) {
+								$row=mysqli_fetch_assoc($res);
+                                if ($row['kd_jabatan']==$r['kd_jabatan']) echo "<option value=$r[kd_jabatan] selected>$r[kd_jabatan]</option>";
 								else{
 							       echo"<option value=$row[kd_jabatan]>$row[kd_jabatan]</option>";
 								}
@@ -252,7 +252,7 @@ switch($_GET['act']){
               <div class='col-md-2'>Kode Jabatan</div>
               <div class='col-md-2'>
                 <select name='kd_jabatan' class='form-control'>";
-                  $kdjab=mysql_query("SELECT * FROM jabatan");
+                  $kdjab=mysqli_query($mysqli, "SELECT * FROM jabatan");
                   while ($d=mysql_fetch_array($kdjab)){
                     echo "<option value=$d[kd_jabatan]>$d[kd_jabatan]-$d[nm_jabatan]</option>";
                   }

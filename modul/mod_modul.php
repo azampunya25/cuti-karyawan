@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Modul
   default:
   echo "
@@ -21,8 +21,8 @@ switch($_GET['act']){
                     <th>Status</th>
                     <th>Aksi</th>
                   </tr>";
-                  $tampil=mysql_query("SELECT * FROM modul ORDER BY urutan");
-                  while ($r=mysql_fetch_array($tampil)){
+                  $tampil=mysqli_query($mysqli, "SELECT * FROM modul ORDER BY urutan");
+                  while ($r=mysqli_fetch_array($tampil)){
                   echo "
                   <tr>
                     <td>$r[urutan]</td>
@@ -102,8 +102,8 @@ switch($_GET['act']){
   break;
 
   case "editmodul":
-  $edit = mysql_query("SELECT * FROM modul WHERE id_modul='$_GET[id]'");
-  $r    = mysql_fetch_array($edit);
+  $edit = mysqli_query($mysqli, "SELECT * FROM modul WHERE id_modul='$_GET[id]'");
+  $r    = mysqli_fetch_array($edit);
 
   echo "
         <div class='box box-default'>

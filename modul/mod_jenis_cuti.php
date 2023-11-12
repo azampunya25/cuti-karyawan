@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Jenis Cuti
   default:
     echo "
@@ -20,9 +20,9 @@ switch($_GET['act']){
                   <th>Keterangan</th>
                   <th>Aksi</th>
                 </tr>";
-                $tampil=mysql_query("SELECT * FROM jenis_cuti ORDER BY id_jenis_cuti");
+                $tampil=mysqli_query($mysqli, "SELECT * FROM jenis_cuti ORDER BY id_jenis_cuti");
                 $no=1;
-                while ($r=mysql_fetch_array($tampil)){
+                while ($r=mysqli_fetch_array($tampil)){
           echo "<tr>
                   <td>$no</td>
                   <td>$r[kd_jcuti]</td>
@@ -84,8 +84,8 @@ switch($_GET['act']){
      break;
 
   case "editjenis_cuti":
-    $edit=mysql_query("SELECT * FROM jenis_cuti WHERE id_jenis_cuti='$_GET[id]'");
-    $r=mysql_fetch_array($edit);
+    $edit=mysqli_query($mysqli, "SELECT * FROM jenis_cuti WHERE id_jenis_cuti='$_GET[id]'");
+    $r=mysqli_fetch_array($edit);
 
     echo "
           <div class='box box-default'>

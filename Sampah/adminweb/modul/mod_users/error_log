@@ -1,9 +1,0 @@
-[10-Mar-2018 08:34:57 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
-[10-Mar-2018 08:34:57 America/New_York] PHP Notice:  Use of undefined constant module - assumed 'module' in /home/rumacsnc/public_html/cutipegawai/adminweb/modul/mod_users/aksi_users.php on line 11
-[10-Mar-2018 08:34:57 America/New_York] PHP Notice:  Use of undefined constant act - assumed 'act' in /home/rumacsnc/public_html/cutipegawai/adminweb/modul/mod_users/aksi_users.php on line 12
-[10-Mar-2018 08:34:57 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/modul/mod_users/aksi_users.php on line 52
-[10-Mar-2018 08:34:57 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/modul/mod_users/aksi_users.php on line 60
-[10-Mar-2018 08:35:46 America/New_York] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rumacsnc/public_html/cutipegawai/config/koneksi.php on line 23
-[10-Mar-2018 08:35:46 America/New_York] PHP Notice:  Use of undefined constant module - assumed 'module' in /home/rumacsnc/public_html/cutipegawai/adminweb/modul/mod_users/aksi_users.php on line 11
-[10-Mar-2018 08:35:46 America/New_York] PHP Notice:  Use of undefined constant act - assumed 'act' in /home/rumacsnc/public_html/cutipegawai/adminweb/modul/mod_users/aksi_users.php on line 12
-[10-Mar-2018 08:35:46 America/New_York] PHP Notice:  Use of undefined constant password - assumed 'password' in /home/rumacsnc/public_html/cutipegawai/adminweb/modul/mod_users/aksi_users.php on line 52

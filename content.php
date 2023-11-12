@@ -82,57 +82,57 @@ elseif ($_GET['module']=='hari_libur'){
   include "modul/mod_hari_libur.php";
 }
 
-elseif(isset($_GET[errj]))  {
+elseif(isset($_GET['errj']))  {
 echo "maaf kode jabatan sudah ada
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[erru]))  {
+elseif(isset($_GET['erru']))  {
 echo "maaf user dengan Nik tersebut sudah ada
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errk]))  {
+elseif(isset($_GET['errk']))  {
 echo "maaf karyawan dengan Nik tersebut sudah ada
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errjc]))  {
+elseif(isset($_GET['errjc']))  {
 echo "maaf jenis cuti tersebut sudah ada
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errhr]))  {
+elseif(isset($_GET['errhr']))  {
 echo "maaf hari libur tersebut sudah ada
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errtanggal]))  {
+elseif(isset($_GET['errtanggal']))  {
 echo "maaf tanggal awal tidak boleh lebih besar dari tanggal akhir
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errtanggal1]))  {
+elseif(isset($_GET['errtanggal1']))  {
 echo "maaf tanggal tidak boleh kosong
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[erralasan]))  {
+elseif(isset($_GET['erralasan']))  {
 echo "maaf alasan tidak boleh kosong
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errperiode]))  {
+elseif(isset($_GET['errperiode']))  {
 echo "maaf tanggal cuti tidak sesuai dengan periode
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errtolakcuti]))  {
+elseif(isset($_GET['errtolakcuti']))  {
 echo "maaf permohonan cuti ditolak karena sudah melebihi stok cuti
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
 
-elseif(isset($_GET[errtolakcuti2]))  {
+elseif(isset($_GET['errtolakcuti2']))  {
 echo "maaf permohonan cuti ditolak karena sudah melebihi stok cuti
 <br><input type=button value=Kembali onclick=self.history.back()>";
 }
@@ -140,6 +140,5 @@ echo "maaf permohonan cuti ditolak karena sudah melebihi stok cuti
 else{
   echo "<p><b>MODUL BELUM ADA</b></p>";
 }
-
 
 ?>

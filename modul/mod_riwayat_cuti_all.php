@@ -24,7 +24,7 @@
 
 
 <?php
-switch($_GET[act]){
+switch(isset($_GET['act'])){
   // Tampil Riwayat Cuti
   default:
     echo "<h2>Riwayat Cuti</h2>";
@@ -33,8 +33,10 @@ switch($_GET[act]){
          <input type='submit' name='submit' value='Cari'></td></tr></table>
          </form>";
 
-     if ((isset($_POST['submit'])) and ($_POST['carinik']<>"")){      $carinik=$_POST['carinik'];
-      $s=mysql_query("SELECT * FROM karyawan inner join permohonan_cuti
+     if ((isset($_POST['submit'])) and ($_POST['carinik']<>"")){
+      $carinik=$_POST['carinik'];
+
+      $s=mysql_query("SELECT * FROM karyawan inner join permohonan_cuti
       on karyawan.nik=permohonan_cuti.nik
       WHERE karyawan.nik='$carinik'");
       $r=mysql_fetch_array($s);
@@ -70,7 +72,8 @@ switch($_GET[act]){
        $no++;
        }
       }
-      else{      	echo "Belum pernah cuti";
+      else{
+      	echo "Belum pernah cuti";
        	  }
       echo "</table>";
      }

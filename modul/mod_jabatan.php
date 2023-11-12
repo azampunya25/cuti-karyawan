@@ -1,5 +1,5 @@
 <?php
-switch($_GET['act']){
+switch(isset($_GET['act'])){
   // Tampil Jabatan
   default:
     echo "
@@ -19,9 +19,9 @@ switch($_GET['act']){
                       <th>Keterengan</th>
                       <th>Aksi</th>
                     </tr>";
-                    $tampil=mysql_query("SELECT * FROM jabatan ORDER BY id_jabatan");
+                    $tampil=mysqli_query($mysqli, "SELECT * FROM jabatan ORDER BY id_jabatan");
                     $no=1;
-                    while ($r=mysql_fetch_array($tampil)){
+                    while ($r=mysqli_fetch_array($tampil)){
                echo "<tr>
                       <td>$no</td>
                       <td>$r[kd_jabatan]</td>
@@ -77,8 +77,8 @@ switch($_GET['act']){
      break;
 
   case "editjabatan":
-    $edit=mysql_query("SELECT * FROM jabatan WHERE id_jabatan='$_GET[id]'");
-    $r=mysql_fetch_array($edit);
+    $edit=mysqli_query($mysqli, "SELECT * FROM jabatan WHERE id_jabatan='$_GET[id]'");
+    $r=mysqli_fetch_array($edit);
 
     echo "
           <div class='box box-default'>
