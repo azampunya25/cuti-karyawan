@@ -20,10 +20,10 @@ switch($_GET['act']){
                       <th>Aksi</th>
                     </tr>
                   </thead>";
-                    $tampil=mysql_query("SELECT user.*,karyawan.* FROM user inner join
+                    $tampil=mysqli_query($mysqli,"SELECT user.*,karyawan.* FROM user inner join
                       karyawan on user.nik=karyawan.nik ORDER BY id_user");
                     $no=1;
-                    while ($r=mysql_fetch_array($tampil)){
+                    while ($r=mysqli_fetch_array($tampil)){
               echo "<tbody><tr>
                       <td>$no</td>
                       <td>$r[nik]</td>

@@ -2,12 +2,12 @@
 include "config/koneksi.php";
 $pass=md5($_POST['password']);
 
-$login=mysql_query("SELECT user.*,karyawan.nama FROM user inner join karyawan
+$login=mysqli_query($mysqli, "SELECT user.*,karyawan.nama FROM user inner join karyawan
 on user.nik=karyawan.nik WHERE user.nik='$_POST[username]'
 AND user.password='$pass'");
 
-$ketemu=mysql_num_rows($login);
-$r=mysql_fetch_array($login);
+$ketemu=mysqli_num_rows($login);
+$r=mysqli_fetch_array($login);
 // Apabila username dan password ditemukan
 if ($ketemu > 0){
   session_start();
